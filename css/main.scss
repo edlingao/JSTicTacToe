@@ -1,0 +1,131 @@
+$dark-red: #2d132c;
+$red: #801336;
+$dark-orange: #c72c41;
+$orange: #ee4540;
+$blue: #AFE1FF;
+$ligth-red: #FFAFAF;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.form-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: black, $alpha: 0.8);
+    position: fixed;
+    .form{
+        height: 330px;
+        width: 300px;
+        background: $red;
+        padding: 20px 30px;
+        border-radius: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        label{
+            font-size: 30px;
+        }
+        input[type=text]{
+            font-size: 1.5rem;
+            padding: 5px 20px;
+            text-align: center;
+            border: 0;
+            border-radius: 10vh;
+            outline: none;
+            &:focus{
+                box-shadow: 0 0 0 5px $red,
+                            0 0 0 8px $dark-orange;
+            }
+        }
+        button{
+            border: 0;
+            background: $dark-orange;
+            font-size: 30px;
+            padding: 10px 20px;
+            border-radius: 10vh;
+            color: white;
+            cursor: pointer;
+            outline: none;
+            margin-top: 10px;
+
+            
+            &:focus{
+                box-shadow: 0 0 0 5px $red,
+                            0 0 0 8px $dark-orange;
+            }
+            
+        }
+        
+    }
+}
+
+blue{
+    color: $blue;
+    font-size: 35px;
+    font-weight: 900;
+    text-shadow: 
+                -2px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+}
+red{
+    color: $ligth-red;
+    font-size: 35px;
+    font-weight: 900;
+    text-shadow: 
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+}
+
+
+
+
+body{
+    background: $dark-red;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .board{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-gap: 20px;
+        .cell{
+            height: 200px;
+            width: 200px;
+            background: $orange;
+            border-radius: 2vh;
+            cursor: pointer;
+            box-shadow: 10px 10px 0px black;
+            font-size: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 
+                        -2px -2px 0 black,
+                        2px -2px 0 black,
+                        -2px 2px 0 black,
+                        2px 2px 0 black;
+        }
+    }
+    
+}
