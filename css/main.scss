@@ -44,6 +44,7 @@ $ligth-red: #FFAFAF;
             border: 0;
             border-radius: 10vh;
             outline: none;
+            transition: all .2s;
             &:focus{
                 box-shadow: 0 0 0 5px $red,
                             0 0 0 8px $dark-orange;
@@ -59,11 +60,14 @@ $ligth-red: #FFAFAF;
             cursor: pointer;
             outline: none;
             margin-top: 10px;
-
+            transition: all .2s;
             
             &:focus{
                 box-shadow: 0 0 0 5px $red,
                             0 0 0 8px $dark-orange;
+            }
+            &:hover{
+                background: rgba($color: $dark-orange, $alpha: .4);
             }
             
         }
@@ -113,18 +117,26 @@ body{
             width: 200px;
             background: $orange;
             border-radius: 2vh;
-            cursor: pointer;
             box-shadow: 10px 10px 0px black;
-            font-size: 10rem;
+            
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
+            user-select: none;
             text-shadow: 
                         -2px -2px 0 black,
                         2px -2px 0 black,
                         -2px 2px 0 black,
                         2px 2px 0 black;
+            cursor: pointer;
+            transition: all .2s;
+            &:hover{
+                background: rgba($color: $dark-orange, $alpha: .4);
+            }
+            blue, red{
+                font-size: 10rem;
+            }
         }
     }
     

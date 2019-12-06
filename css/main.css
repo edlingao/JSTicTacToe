@@ -56,6 +56,8 @@
   border: 0;
   border-radius: 10vh;
   outline: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .form-container .form input[type=text]:focus {
@@ -73,11 +75,17 @@
   cursor: pointer;
   outline: none;
   margin-top: 10px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .form-container .form button:focus {
   -webkit-box-shadow: 0 0 0 5px #801336, 0 0 0 8px #c72c41;
           box-shadow: 0 0 0 5px #801336, 0 0 0 8px #c72c41;
+}
+
+.form-container .form button:hover {
+  background: rgba(199, 44, 65, 0.4);
 }
 
 blue {
@@ -124,10 +132,8 @@ body {
   width: 200px;
   background: #ee4540;
   border-radius: 2vh;
-  cursor: pointer;
   -webkit-box-shadow: 10px 10px 0px black;
           box-shadow: 10px 10px 0px black;
-  font-size: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +144,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.container .board .cell:hover {
+  background: rgba(199, 44, 65, 0.4);
+}
+
+.container .board .cell blue, .container .board .cell red {
+  font-size: 10rem;
 }
 /*# sourceMappingURL=main.css.map */
