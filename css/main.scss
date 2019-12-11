@@ -15,7 +15,19 @@ $ligth-red: #FFAFAF;
 .hidden{
     display: none !important;
 }
-
+.win-message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    #winner{
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+    }
+}
 #player-name{
     position: fixed;
     display: flex;

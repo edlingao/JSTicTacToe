@@ -10,6 +10,27 @@
   display: none !important;
 }
 
+.win-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 10vh;
+}
+
+.win-message #winner {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
 #player-name {
   position: fixed;
   display: -webkit-box;
